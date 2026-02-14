@@ -7,13 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GMCreator.GLua", "GMCreator
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GMCreator.GLua.Tests", "GMCreator.GLua.Tests\GMCreator.GLua.Tests.csproj", "{12C7C010-77ED-4447-851F-EE5EB7684DD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GMCreator.WPF", "GMCreator.WPF\GMCreator.WPF.csproj", "{B75E0001-EDFA-4F17-8A7A-27C50364C5E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8602E33E-FC11-40AE-A1B6-67A7CFD0726E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +23,15 @@ Global
 		{12C7C010-77ED-4447-851F-EE5EB7684DD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12C7C010-77ED-4447-851F-EE5EB7684DD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12C7C010-77ED-4447-851F-EE5EB7684DD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B75E0001-EDFA-4F17-8A7A-27C50364C5E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B75E0001-EDFA-4F17-8A7A-27C50364C5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B75E0001-EDFA-4F17-8A7A-27C50364C5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B75E0001-EDFA-4F17-8A7A-27C50364C5E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F189478E-3D47-4E7E-AA22-9920AC3D0A30}
 	EndGlobalSection
 EndGlobal
