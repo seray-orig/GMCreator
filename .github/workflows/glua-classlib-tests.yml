@@ -1,0 +1,28 @@
+name: GMCreator GLua Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Установка .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Обновление зависимостей
+        run: dotnet restore
+
+      - name: Сборка GLua
+        run: dotnet build GMCreator.GLua/GMCreator.GLua.csproj --configuration Release --no-restore
+
+      - name: Запуск тестов
+        run: dotnet test GMCreator.GLua.Tests/GMCreator.GLua.Tests.csproj --configuration Release --no-build --verbosity normal
