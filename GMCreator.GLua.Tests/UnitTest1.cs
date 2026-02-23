@@ -14,7 +14,5 @@ public class UnitTest1
                    """;
         
         var block = new LuaCodeBlock(code, "if (x == 10) then");
-
-        Console.WriteLine(block.ToString());
     }
 }
