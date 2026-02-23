@@ -1,11 +1,9 @@
 name: GMCreator GLua Tests
 
-on:
-  push:
-    branches: [ main, master ]
+on: [push]
 
 jobs:
-  test:
+  GLua-Tests:
     runs-on: ubuntu-latest
 
     steps:

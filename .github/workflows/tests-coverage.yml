@@ -1,0 +1,17 @@
+name: Tests-Code Coverage
+
+on: [push]
+
+jobs:
+  Tests-Coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - run: dotnet test GMCreator.GLua.Tests/GMCreator.GLua.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+      - uses: codecov/codecov-action@v4
