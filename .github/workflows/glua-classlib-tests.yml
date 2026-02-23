@@ -23,4 +23,4 @@ jobs:
         run: dotnet build GMCreator.GLua/GMCreator.GLua.csproj --configuration Release --no-restore
 
       - name: Запуск тестов
-        run: dotnet test GMCreator.GLua.Tests/GMCreator.GLua.Tests.csproj --configuration Release --no-build --verbosity normal
+        run: dotnet test GMCreator.GLua.Tests/GMCreator.GLua.Tests.csproj --configuration Release --verbosity normal
