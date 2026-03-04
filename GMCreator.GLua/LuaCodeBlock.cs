@@ -2,20 +2,18 @@
 
 namespace GMCreator.GLua;
 
-public struct LuaCodeBlock
+public class LuaCodeBlock
 {
-    public string Header { get; private set; }
-    public string Code { get; private set; } = String.Empty;
-    public string Ending { get; private set; }
+    public string Header = String.Empty;
+    public string Code;
+    public string Ending = String.Empty;
 
-    public LuaCodeBlock(LuaCodeBlock block, string header = "", string ending = "end")
+    public LuaCodeBlock(string code)
     {
-        Header = header;
-        Code = block.ToString();
-        Ending =  ending;
+        Code = code;
     }
 
-    public LuaCodeBlock(string code, string header = "", string ending = "end")
+    public LuaCodeBlock(string header, string code, string ending = "end")
     {
         Header = header;
         Code = code;
@@ -29,7 +27,7 @@ public struct LuaCodeBlock
 
         var tempString = new StringBuilder(Code.Length);
         tempString.Append($"{Header}\n");
-        foreach(var line in Code.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None))
+        foreach(var line in Code.Split([ "\r\n", "\r", "\n" ], StringSplitOptions.None))
             tempString.Append($"\t{line}\n");
         tempString.Append(Ending);
 
