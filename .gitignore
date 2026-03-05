@@ -378,3 +378,6 @@ FodyWeavers.xsd
 # User-specific files
 *.user
 *.suo
+
+# Obsidian
+.obsidian/
