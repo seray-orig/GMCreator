@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://media1.tenor.com/m/i87fOwvF-mEAAAAd/team-fortress-2-tf2.gif">
-</p>
+![](https://media1.tenor.com/m/i87fOwvF-mEAAAAd/team-fortress-2-tf2.gif)
 
 # Garry's Mod Creator (GMCreator)
 ---
